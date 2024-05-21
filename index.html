@@ -1,0 +1,442 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivero Santa Maria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+</body>
+<header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-leaf"></i> Vivero Santa Maria</a>
+
+    <div class="dark-mode">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="nav-toggle" id="nav-toggle"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Acerca de...</a>
+        <a href="#available">Nuevo</a>
+        <a href="#best">Los mejores productos</a>
+        <a href="#login">Iniciar sesión</a>
+    </nav>
+    <div id="menu" class="fas fa-bars"></div>
+</header>
+
+<!-- Seccion inicio -->
+<section class="home" id="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box" style="background: url(./images/h3.png);">
+                    <div class="content">
+                        <span>Descuentos de hasta 75%</span>
+                        <h3>Ofertas en plantas de temporada</h3>
+                        <a href="" class="btn">Compra ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background: url(./images/h2.png);">
+                    <div class="content">
+                        <span>Descuentos de hasta 50%</span>
+                        <h3>Ofertas en plantas de temporada</h3>
+                        <a href="" class="btn">Compra ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box" style="background: url(./images/h1.png);">
+                    <div class="content">
+                        <span>Descuentos de hasta 25%</span>
+                        <h3>Ofertas en plantas de temporada</h3>
+                        <a href="" class="btn">Compra ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Popup -->
+<div class="popup hide-popup">
+    <div class="popup-content">
+        <div class="popup-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="popup-left">
+            <div class="popup-img-container">
+                <img src="./images/sl2.png" alt="" style="width: 100%">
+            </div>
+        </div>
+        <div class="popup-right">
+            <h1>Registrate y<br>Obten un descuento del <span>50%</span></h1>
+            <p>Aplican restricciones, valido del 25 de mayo al 15 de junio</p>
+            <form action="#">
+                <input type="email" placeholder="Introduce tu email..." class="popup-form">
+                <a href="#" class="btn">Registrate</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Acerca de nosotros, slides -->
+<section id="about">
+    <div class="about-us-container">
+        <div class="column">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./images/sl3.png" alt="" style="width: 100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/sl2.png" alt="" style="width: 100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/sl1.png" alt="" style="width: 100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/sl4.png" alt="" style="width: 100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/sl5.png" alt="" style="width: 100%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Acerca de nosotros -->
+        <div class="column description-container">
+            <div class="description">
+                <p class="about-us-tittle">Acerca de nosotros</p>
+                <p class="about-us-content">
+                    Bienvenido a Santa María, tu vivero en el corazón de Orizaba, donde la naturaleza cobra vida. Sumérgete en un oasis de verdor con una variedad impresionante de plantas que van desde exóticas especies tropicales hasta las más robustas variedades autóctonas.
+                    Nuestros expertos jardineros están listos para guiarte en tu viaje botánico, ya seas un aficionado entusiasta o un jardinero experimentado. ¡Descubre la magia de Santa María y lleva a casa un pedacito de naturaleza para ti!
+                </p>
+                <a href="" class="button">
+                    <p class="btn">Conócenos</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stock -->
+<section class="product" id="available">
+    <h1 class="heading">Nuevos productos</h1>
+    <div class="line"></div>
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p1.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p2.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p3.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p4.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p5.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="./images/p6.png" alt="" style="width: 50%">
+            <h3>Ultimas plantas</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="quantity">
+                <span>Cantidad: </span>
+                <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="price">
+                $150 <span> $250.00 </span>
+            </div>
+            <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+    </div>
+</section>
+
+<!-- Banner -->
+<section class="banner-container">
+    <div class="banner">
+        <img src="./images/indoor.png" alt="" style="width: 100%;">
+        <div class="content">
+            <h3>Plantas de interior</h3>
+            <a href="#" class="btn">¡Descubre!</a>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="./images/outdoor.png" alt="" style="width: 100%;">
+        <div class="content">
+            <h3>Plantas de exterior</h3>
+            <a href="#" class="btn">¡Descubre!</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion de ventas -->
+<section class="sell" id="best">
+    <h1 class="heading">Nuestros mejores productos</h1>
+    <div class="line"></div>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="./images/s1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Viola tricolor</h3>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="./images/s2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Phormium tenax</h3>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="./images/s3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Arrayan de bola</h3>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="./images/s4.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Gerberas</h3>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+            </div>
+        </div>
+</section>
+
+<!-- Banner de promociones -->
+<section class="banner position-relative">
+    <div class="container">
+        <img src="./images/bnn.png" alt="" class="w-100">
+    </div>
+</section>
+
+<!-- Registro/Iniciar secion -->
+<section class="contact" id="login">
+    <h1 class="heading">Bienvenidos</h1>
+    <div class="line"></div>
+
+    <div class="row">
+        <div class="image">
+            <img src="./images/loginbanner.png" alt="">
+        </div>
+        <div id="register-container" class="form-container active">
+            <form action="">
+                <h3>Regístrate</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Nombre" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" placeholder="Número de teléfono" pattern="[0-9]{10}" required>
+               </div>
+               <div class="inputBox">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-lock"></span>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-calendar"></span>
+                    <input type="date" placeholder="Fecha de Nacimiento" required>
+                </div>
+                <button type="submit" class="btn">Registrarse</button>
+                <span class="toggle-link" id="login-toggle">¿Ya tienes una cuenta? Inicia Sesión</span>
+            </form>
+        </div>
+        <div id="login-container" class="form-container">
+            <form action="">
+                <h3>Iniciar Sesión</h3>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-lock"></span>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <span class="toggle-link" id="register-toggle">¿No tienes una cuenta? Regístrate aquí</span>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de pagina -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Dirección</h3>
+            <p>Norte 34 esquina oriente 7, Orizaba,Ver.</p>
+        </div>
+        <div class="box">
+            <h3>Correo electronico: </h3>
+            <a href="#" class="link">viverosantamaria@gmail.com</a>
+        </div>
+        <div class="box">
+            <h3>Teléfono: </h3>
+            <p>+522721234567</p>
+        </div>
+        <div class="box">
+            <h3>Horarios de atención: </h3>
+            <p>Lunes a sabado: 9:00 AM - 5:30 PM <br>Domingo: Cerrado</p>
+        </div>
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./script.js"></script>
